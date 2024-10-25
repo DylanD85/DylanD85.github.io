@@ -79,8 +79,7 @@
 			function update() {
 				positionX = positionX + speed;
 				moveBoxTo(positionX);
-				if (positionX > boardWidth) {
-					//code to move box to the left
+				if (positionX > boardWidth) {			
 					speed = speed * -1
 				}
 
@@ -96,15 +95,12 @@
 				positionX = 0;
 				points = points + 1;
 				changeBoxText(points);
-				// Reassingning the positionX variable to 0 so that the box will move box will move back to the left side of the screen
-				if (speed > 0) {
-					// add 3 to speed
+				
+				if (speed > 0)	
 					speed = speed + 3;
 				}
 					else if (speed < 0) {
-						//subtract 3 from speed
 						speed = speed -3;
-
 					}
 				
 
